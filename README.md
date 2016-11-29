@@ -26,5 +26,15 @@ date       || credit || debit   || balance
 
 I went with a single account class with methods for adding and withdrawing funds.
 
-For printing statements in that table format, I installed the gem [Terminal Table](https://github.com/tj/terminal-table).
+For printing statements in a table format, I installed the gem [Terminal Table](https://github.com/tj/terminal-table).
 This dictated that the format of my statement would take the form of an array of arrays.
+
+Not quite the same but similar enough!
+
++----------+--------+-------+---------+
+| Date     | Credit | Debit | Balance |
++----------+--------+-------+---------+
+| 11/29/16 | 500.0  | -     | 150.0   |
++----------+--------+-------+---------+
+| 11/29/16 | -      | 350.0 | -350.0  |
++----------+--------+-------+---------+
