@@ -34,5 +34,4 @@ let(:account) { described_class.new }
       expect {account.debit('nonsense')}.to raise_error("Must enter a number")
     end
   end
-
 end
