@@ -27,10 +27,9 @@ date       || credit || debit   || balance
 I went with a single account class with methods for adding and withdrawing funds.
 
 For printing statements in a table format, I installed the gem [Terminal Table](https://github.com/tj/terminal-table).
-This dictated that the format of my statement would take the form of an array of arrays.
+This turns an array of arrays into a simple table format, and also turns the symbol :separator into a division line.
 
-Not quite the same but similar enough!
-
+```
 +----------+--------+-------+---------+
 | Date     | Credit | Debit | Balance |
 +----------+--------+-------+---------+
@@ -38,3 +37,13 @@ Not quite the same but similar enough!
 +----------+--------+-------+---------+
 | 11/29/16 | -      | 350.0 | -350.0  |
 +----------+--------+-------+---------+
+```
+### INSTALLATION INSTRUCTIONS
+
+clone this repo
+hit 'bundle'
+go into irb
+create a new account with account = Account.new
+add money to the account with account.credit(amount)
+withdraw money with acccount.debit(amount)
+print your statement with account.print_statement
